@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Index</title>
+    <style>
+        :root {
+            --primary-color: #0088cc; /* 텔레그램 컬러 */
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 450px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            background-color: #ddd; /* 이미지 없을 때 대비 */
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn-telegram {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn-telegram:hover {
+            background-color: #0077b5;
+            transform: translateY(-2px);
+        }
+
+        .btn-telegram svg {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://via.placeholder.com/400x200" alt="Main Thumbnail" class="thumbnail">
+
+    <h1>안녕하세요, 반갑습니다!</h1>
+    <p>
+        저의 포트폴리오 및 프로젝트 공간입니다.<br>
+        궁금한 점이 있으시면 아래 채널로 문의해주세요.
+    </p>
+
+    <a href="https://t.me/+IentpPFPRWwxY2Q1" class="btn-telegram" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.526.26l.192-2.934 5.255-4.754c.228-.204-.05-.317-.353-.113l-6.495 4.09-2.846-.89c-.62-.193-.632-.618.13-.918l11.125-4.292c.515-.187.965.12.72.859z" fill="white"/>
+        </svg>
+        텔레그램으로 입장하기
+    </a>
+</div>
+
+</body>
+</html>
